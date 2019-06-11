@@ -23,6 +23,7 @@ class speechViewController: UIViewController {
         }
         else if (flag == 1){
             self.microphone.image = UIImage(named: "Untitled-3")
+            flag = 0
         }
     }
 

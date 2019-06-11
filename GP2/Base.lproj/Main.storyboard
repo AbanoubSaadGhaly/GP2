@@ -24,7 +24,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AsRara" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SK-x3-uK0">
                                         <rect key="frame" x="71" y="40" width="233" height="111"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="69"/>
-                                        <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.0" green="0.82409731218497417" blue="0.60235554225438637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
                                 </subviews>
@@ -142,7 +142,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="ro7-QZ-Cie" firstAttribute="top" secondItem="8Zv-2h-yUL" secondAttribute="bottom" id="0Gg-ix-rfW"/>
                             <constraint firstItem="ro7-QZ-Cie" firstAttribute="top" secondItem="8Zv-2h-yUL" secondAttribute="bottom" id="10p-KR-Kln"/>
@@ -380,337 +380,259 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Bb-nV-Djh" userLabel="contentView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="951"/>
                                         <subviews>
-                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ar5-7D-K5x" userLabel="Room1Label">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzQ-if-bXT" userLabel="Room 1">
+                                                <rect key="frame" x="8" y="28" width="96" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AUm-gf-brU">
+                                                <rect key="frame" x="10" y="74" width="355" height="50"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzQ-if-bXT" userLabel="Room 1">
-                                                        <rect key="frame" x="0.0" y="17" width="96" height="36"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fLi-xl-njs" userLabel="lampCamera1View">
-                                                <rect key="frame" x="0.0" y="53" width="375" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="AUm-gf-brU">
-                                                        <rect key="frame" x="8" y="0.0" width="359" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUu-ab-8nd">
-                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
-                                                                <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Lamp" image="lightbulb-off">
-                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                </state>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfX-ba-qIA">
-                                                                <rect key="frame" x="209" y="0.0" width="150" height="50"/>
-                                                                <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Camera" image="cctv">
-                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                </state>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1MT-yw-I9y" userLabel="fan1View">
-                                                <rect key="frame" x="0.0" y="103" width="375" height="62"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDi-bL-Xrr">
-                                                        <rect key="frame" x="137.5" y="6" width="100" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUu-ab-8nd">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="50"/>
                                                         <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Fan" image="flower">
+                                                        <state key="normal" title="Lamp" image="lightbulb-off">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="lampRoom1:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="ErQ-yP-MSa"/>
+                                                        </connections>
                                                     </button>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BvQ-QY-WFB" userLabel="fan1Slider">
-                                                <rect key="frame" x="0.0" y="165" width="375" height="51"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DtL-yK-38F">
-                                                        <rect key="frame" x="6" y="11" width="363" height="31"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="tintColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </slider>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r66-uG-bTq" userLabel="fan1Label">
-                                                <rect key="frame" x="0.0" y="216" width="375" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1xw-fU-lKK">
-                                                        <rect key="frame" x="166" y="6" width="43" height="22"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfX-ba-qIA">
+                                                        <rect key="frame" x="182.5" y="0.0" width="172.5" height="50"/>
                                                         <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="E65-G7-B8p" userLabel="fan2Label">
-                                                <rect key="frame" x="0.0" y="466" width="375" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KEN-EX-EZu">
-                                                        <rect key="frame" x="166" y="6" width="43" height="22"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kXa-VM-BJw" userLabel="fan2View">
-                                                <rect key="frame" x="0.0" y="353" width="375" height="62"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="isK-je-uT2">
-                                                        <rect key="frame" x="137.5" y="6" width="100" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Fan" image="flower">
+                                                        <state key="normal" title="Camera" image="cctv">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="cameraRoom1:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="DU1-QQ-4QF"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DLf-br-yez" userLabel="Room2Label">
-                                                <rect key="frame" x="0.0" y="250" width="375" height="53"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="Ypw-oV-wPW"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxv-SX-w9T" userLabel="Room 1">
+                                                <rect key="frame" x="164" y="134" width="47" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DtL-yK-38F">
+                                                <rect key="frame" x="6" y="180" width="363" height="31"/>
+                                                <color key="tintColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="fanRoom1:" destination="8mM-Te-1Xj" eventType="valueChanged" id="RlY-1v-ZT7"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSN-0q-GoP">
+                                                <rect key="frame" x="8" y="220" width="99.5" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y45-24-dV9">
+                                                <rect key="frame" x="10" y="266" width="355" height="50"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Room 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSN-0q-GoP">
-                                                        <rect key="frame" x="0.0" y="17" width="100" height="36"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Rhm-27-u03" userLabel="lampCamera2View">
-                                                <rect key="frame" x="0.0" y="303" width="375" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="y45-24-dV9">
-                                                        <rect key="frame" x="8" y="0.0" width="359" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvc-NA-2tE">
-                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
-                                                                <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Lamp" image="lightbulb-off">
-                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                </state>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgC-cc-hdw">
-                                                                <rect key="frame" x="209" y="0.0" width="150" height="50"/>
-                                                                <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Camera" image="cctv">
-                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                </state>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cnr-ZW-S56" userLabel="fan2Slider">
-                                                <rect key="frame" x="0.0" y="415" width="375" height="51"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k3k-Hl-k2b">
-                                                        <rect key="frame" x="6" y="11" width="363" height="31"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="tintColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </slider>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZDc-PC-AdB" userLabel="fan3Label">
-                                                <rect key="frame" x="0.0" y="716" width="375" height="34"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="adN-Ht-kzR">
-                                                        <rect key="frame" x="166" y="6" width="43" height="22"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvc-NA-2tE">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="50"/>
                                                         <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <nil key="textColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xCf-ds-ppl" userLabel="fan3View">
-                                                <rect key="frame" x="0.0" y="603" width="375" height="62"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLU-RI-jab">
-                                                        <rect key="frame" x="137.5" y="6" width="100" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <state key="normal" title="Fan" image="flower">
+                                                        <state key="normal" title="Lamp" image="lightbulb-off">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="lampRoom2:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="4aE-iG-bTs"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgC-cc-hdw">
+                                                        <rect key="frame" x="182.5" y="0.0" width="172.5" height="50"/>
+                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Camera" image="cctv">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="cameraRoom2:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="lnY-g3-ia3"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Law-0e-eBf" userLabel="salonLabel">
-                                                <rect key="frame" x="0.0" y="500" width="375" height="53"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="2b8-Fe-2Wk"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asm-Q8-UyS" userLabel="Room 1">
+                                                <rect key="frame" x="164" y="326" width="47" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k3k-Hl-k2b">
+                                                <rect key="frame" x="6" y="372" width="363" height="31"/>
+                                                <color key="tintColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="fanRoom2:" destination="8mM-Te-1Xj" eventType="valueChanged" id="pRY-hu-WdI"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEk-r9-re3" userLabel="Room 1">
+                                                <rect key="frame" x="8" y="412" width="73" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZFc-7I-gcu">
+                                                <rect key="frame" x="10" y="458" width="355" height="50"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Salon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEk-r9-re3" userLabel="Room 1">
-                                                        <rect key="frame" x="0.0" y="17" width="73" height="36"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0gL-gv-OYw" userLabel="lampCamera3View">
-                                                <rect key="frame" x="0.0" y="553" width="375" height="50"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="ZFc-7I-gcu">
-                                                        <rect key="frame" x="8" y="0.0" width="359" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7A-ga-Myf">
-                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
-                                                                <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Lamp" image="lightbulb-off">
-                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                </state>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wl4-Py-3Uv">
-                                                                <rect key="frame" x="209" y="0.0" width="150" height="50"/>
-                                                                <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Camera" image="cctv">
-                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                </state>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vEC-0c-jvL" userLabel="fan3Slider">
-                                                <rect key="frame" x="0.0" y="665" width="375" height="51"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iVH-nA-3oD">
-                                                        <rect key="frame" x="6" y="11" width="363" height="31"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <color key="tintColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                    </slider>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7xZ-KA-NN5" userLabel="doorLabel">
-                                                <rect key="frame" x="0.0" y="750" width="375" height="53"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Door" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgV-tR-k1g">
-                                                        <rect key="frame" x="0.0" y="17" width="63" height="36"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Ua-Oi-8YY" userLabel="openCloseCameraView">
-                                                <rect key="frame" x="0.0" y="803" width="375" height="51"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="59" translatesAutoresizingMaskIntoConstraints="NO" id="T1h-Fe-0ru">
-                                                        <rect key="frame" x="8" y="0.0" width="359" height="50"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <subviews>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9f-eH-9S4">
-                                                                <rect key="frame" x="0.0" y="0.0" width="150" height="50"/>
-                                                                <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="OPen/Close" image="home">
-                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                </state>
-                                                            </button>
-                                                            <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJO-lM-BDY">
-                                                                <rect key="frame" x="209" y="0.0" width="150" height="50"/>
-                                                                <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                                <state key="normal" title="Camera" image="cctv">
-                                                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                </state>
-                                                            </button>
-                                                        </subviews>
-                                                    </stackView>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="RAH-OB-uzz" userLabel="notificationLabel">
-                                                <rect key="frame" x="0.0" y="854" width="375" height="53"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CW-A6-L6f">
-                                                        <rect key="frame" x="0.0" y="17" width="149" height="36"/>
-                                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                        <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
-                                                </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
-                                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EUg-8X-5bx" userLabel="sensorWarning">
-                                                <rect key="frame" x="0.0" y="906" width="375" height="45"/>
-                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="sensor warnings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQS-VN-0D6">
-                                                        <rect key="frame" x="16" y="0.0" width="343" height="45"/>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7A-ga-Myf">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="50"/>
                                                         <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                        <nil key="highlightedColor"/>
-                                                    </label>
+                                                        <state key="normal" title="Lamp" image="lightbulb-off">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="lampSalon:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="Ras-dv-I9l"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wl4-Py-3Uv">
+                                                        <rect key="frame" x="182.5" y="0.0" width="172.5" height="50"/>
+                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Camera" image="cctv">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="cameraSalon:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="Rzj-y8-E6N"/>
+                                                        </connections>
+                                                    </button>
                                                 </subviews>
-                                                <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
-                                            </view>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="c9Y-z0-SjR"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJW-zl-2B8" userLabel="Room 1">
+                                                <rect key="frame" x="164" y="518" width="47" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iVH-nA-3oD">
+                                                <rect key="frame" x="6" y="564" width="363" height="31"/>
+                                                <color key="tintColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <action selector="fanSalon:" destination="8mM-Te-1Xj" eventType="valueChanged" id="59G-5z-x1U"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Door" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgV-tR-k1g">
+                                                <rect key="frame" x="8" y="604" width="63" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="T1h-Fe-0ru">
+                                                <rect key="frame" x="10" y="650" width="355" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9f-eH-9S4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="50"/>
+                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="OPen/Close" image="home">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="openCloseDoor:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="WmM-sZ-ZuX"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJO-lM-BDY">
+                                                        <rect key="frame" x="182.5" y="0.0" width="172.5" height="50"/>
+                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <state key="normal" title="Camera" image="cctv">
+                                                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="cameraDoor:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="bWo-ku-btz"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="50" id="I1N-Uj-VPv"/>
+                                                </constraints>
+                                            </stackView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CW-A6-L6f">
+                                                <rect key="frame" x="8" y="710" width="149" height="36"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sensor warnings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQS-VN-0D6">
+                                                <rect key="frame" x="8" y="754" width="359" height="45"/>
+                                                <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="45" id="Ymf-Fo-WrS"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
                                         </subviews>
                                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
-                                            <constraint firstItem="iQS-VN-0D6" firstAttribute="top" secondItem="ar5-7D-K5x" secondAttribute="bottom" constant="853" id="0Bt-cK-dLC"/>
-                                            <constraint firstAttribute="height" constant="951" id="ga1-LG-v8x"/>
-                                            <constraint firstAttribute="width" constant="375" id="j2x-Nn-Ebh"/>
+                                            <constraint firstAttribute="trailing" secondItem="T1h-Fe-0ru" secondAttribute="trailing" constant="10" id="1ga-Sm-Ggd"/>
+                                            <constraint firstItem="CJW-zl-2B8" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="164" id="26u-On-hTF"/>
+                                            <constraint firstItem="DtL-yK-38F" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="8" id="574-gy-EB2"/>
+                                            <constraint firstItem="hgV-tR-k1g" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="8" id="68l-ud-QNI"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="hgV-tR-k1g" secondAttribute="trailing" constant="20" symbolic="YES" id="7s5-c6-43E"/>
+                                            <constraint firstItem="k3k-Hl-k2b" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="8" id="8BL-RI-vg0"/>
+                                            <constraint firstAttribute="trailing" secondItem="iQS-VN-0D6" secondAttribute="trailing" constant="8" id="8zo-ZF-lh8"/>
+                                            <constraint firstItem="iQS-VN-0D6" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="8" id="Aqf-f7-dJ1"/>
+                                            <constraint firstItem="AUm-gf-brU" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="10" id="Arb-o2-8R7"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="NSN-0q-GoP" secondAttribute="trailing" constant="20" symbolic="YES" id="Dpo-U1-Mbt"/>
+                                            <constraint firstAttribute="trailing" secondItem="y45-24-dV9" secondAttribute="trailing" constant="10" id="FXN-Ix-G1M"/>
+                                            <constraint firstItem="iVH-nA-3oD" firstAttribute="top" secondItem="CJW-zl-2B8" secondAttribute="bottom" constant="10" id="G8r-w1-6F3"/>
+                                            <constraint firstItem="yEk-r9-re3" firstAttribute="top" secondItem="k3k-Hl-k2b" secondAttribute="bottom" constant="10" id="HkK-MP-pvV"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Asm-Q8-UyS" secondAttribute="trailing" constant="20" symbolic="YES" id="IH8-ik-CZc"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Nxv-SX-w9T" secondAttribute="trailing" constant="20" symbolic="YES" id="K0q-yB-IMK"/>
+                                            <constraint firstAttribute="trailing" secondItem="AUm-gf-brU" secondAttribute="trailing" constant="10" id="Kbj-dw-mVK"/>
+                                            <constraint firstItem="T1h-Fe-0ru" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="10" id="LHu-gG-Dbp"/>
+                                            <constraint firstItem="iQS-VN-0D6" firstAttribute="top" secondItem="1CW-A6-L6f" secondAttribute="bottom" constant="8" id="ONq-vh-6GL"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="yEk-r9-re3" secondAttribute="trailing" constant="20" symbolic="YES" id="OhP-2W-5OO"/>
+                                            <constraint firstItem="k3k-Hl-k2b" firstAttribute="top" secondItem="Asm-Q8-UyS" secondAttribute="bottom" constant="10" id="Qhl-I1-yRf"/>
+                                            <constraint firstItem="ZFc-7I-gcu" firstAttribute="top" secondItem="yEk-r9-re3" secondAttribute="bottom" constant="10" id="Rzg-xG-lS3"/>
+                                            <constraint firstItem="Nxv-SX-w9T" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="164" id="S0J-6O-WsN"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="CJW-zl-2B8" secondAttribute="trailing" constant="20" symbolic="YES" id="UuP-eH-ytP"/>
+                                            <constraint firstItem="DtL-yK-38F" firstAttribute="top" secondItem="Nxv-SX-w9T" secondAttribute="bottom" constant="10" id="VJX-Ev-Tyx"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="YzQ-if-bXT" secondAttribute="trailing" constant="20" symbolic="YES" id="VaV-7B-OiG"/>
+                                            <constraint firstItem="1CW-A6-L6f" firstAttribute="top" secondItem="T1h-Fe-0ru" secondAttribute="bottom" constant="10" id="Vfb-FD-TxP"/>
+                                            <constraint firstItem="T1h-Fe-0ru" firstAttribute="top" secondItem="hgV-tR-k1g" secondAttribute="bottom" constant="10" id="X4j-Ka-TeS"/>
+                                            <constraint firstItem="YzQ-if-bXT" firstAttribute="top" secondItem="7Bb-nV-Djh" secondAttribute="top" constant="28" id="YGn-ok-5aL"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="1CW-A6-L6f" secondAttribute="trailing" constant="20" symbolic="YES" id="Yci-Th-6Su"/>
+                                            <constraint firstItem="Asm-Q8-UyS" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="164" id="cgH-Gt-DZH"/>
+                                            <constraint firstItem="yEk-r9-re3" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="8" id="dy6-xe-bJL"/>
+                                            <constraint firstItem="iQS-VN-0D6" firstAttribute="top" secondItem="YzQ-if-bXT" secondAttribute="bottom" constant="690" id="eRr-20-dY4"/>
+                                            <constraint firstItem="hgV-tR-k1g" firstAttribute="top" secondItem="iVH-nA-3oD" secondAttribute="bottom" constant="10" id="g5u-w9-Fad"/>
+                                            <constraint firstItem="iVH-nA-3oD" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="8" id="gyS-Za-1Ub"/>
+                                            <constraint firstAttribute="trailing" secondItem="DtL-yK-38F" secondAttribute="trailing" constant="8" id="ibL-nH-EQV"/>
+                                            <constraint firstItem="Nxv-SX-w9T" firstAttribute="top" secondItem="AUm-gf-brU" secondAttribute="bottom" constant="10" id="kUG-5c-EmJ"/>
+                                            <constraint firstItem="NSN-0q-GoP" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="8" id="l7g-Qy-3z8"/>
+                                            <constraint firstItem="1CW-A6-L6f" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="8" id="mLG-yQ-CeH"/>
+                                            <constraint firstItem="AUm-gf-brU" firstAttribute="top" secondItem="YzQ-if-bXT" secondAttribute="bottom" constant="10" id="oA6-bM-sdC"/>
+                                            <constraint firstAttribute="bottom" secondItem="iQS-VN-0D6" secondAttribute="bottom" constant="152" id="oCg-af-UK9"/>
+                                            <constraint firstItem="NSN-0q-GoP" firstAttribute="top" secondItem="DtL-yK-38F" secondAttribute="bottom" constant="10" id="oJC-UU-Nec"/>
+                                            <constraint firstAttribute="trailing" secondItem="k3k-Hl-k2b" secondAttribute="trailing" constant="8" id="oVd-6N-fBE"/>
+                                            <constraint firstAttribute="trailing" secondItem="ZFc-7I-gcu" secondAttribute="trailing" constant="10" id="oYK-Jp-E7V"/>
+                                            <constraint firstItem="YzQ-if-bXT" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="8" id="qjf-W7-Ru6"/>
+                                            <constraint firstItem="y45-24-dV9" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="10" id="rpZ-zn-9xQ"/>
+                                            <constraint firstItem="y45-24-dV9" firstAttribute="top" secondItem="NSN-0q-GoP" secondAttribute="bottom" constant="10" id="smZ-qu-pFS"/>
+                                            <constraint firstAttribute="trailing" secondItem="iVH-nA-3oD" secondAttribute="trailing" constant="8" id="sue-xl-A1j"/>
+                                            <constraint firstItem="CJW-zl-2B8" firstAttribute="top" secondItem="ZFc-7I-gcu" secondAttribute="bottom" constant="10" id="vZ7-81-kDg"/>
+                                            <constraint firstItem="Asm-Q8-UyS" firstAttribute="top" secondItem="y45-24-dV9" secondAttribute="bottom" constant="10" id="yMW-Ju-tZO"/>
+                                            <constraint firstItem="ZFc-7I-gcu" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="10" id="zWF-Ma-O3r"/>
                                         </constraints>
                                     </view>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="7Bb-nV-Djh" secondAttribute="bottom" id="4yb-uB-hm7"/>
-                                    <constraint firstItem="7Bb-nV-Djh" firstAttribute="leading" secondItem="HeS-OP-VBO" secondAttribute="leading" id="aaE-iv-D8L"/>
-                                    <constraint firstItem="7Bb-nV-Djh" firstAttribute="top" secondItem="HeS-OP-VBO" secondAttribute="top" id="b6j-R3-2D2"/>
-                                    <constraint firstAttribute="trailing" secondItem="7Bb-nV-Djh" secondAttribute="trailing" id="cqM-tz-t0S"/>
+                                    <constraint firstAttribute="bottom" secondItem="7Bb-nV-Djh" secondAttribute="bottom" id="LQe-5M-JRd"/>
+                                    <constraint firstItem="7Bb-nV-Djh" firstAttribute="width" secondItem="HeS-OP-VBO" secondAttribute="width" id="Ri6-ND-j3K"/>
+                                    <constraint firstAttribute="trailing" secondItem="7Bb-nV-Djh" secondAttribute="trailing" id="XbR-ov-CXg"/>
+                                    <constraint firstItem="7Bb-nV-Djh" firstAttribute="top" secondItem="HeS-OP-VBO" secondAttribute="top" id="aH9-5h-naI"/>
+                                    <constraint firstItem="7Bb-nV-Djh" firstAttribute="leading" secondItem="HeS-OP-VBO" secondAttribute="leading" id="may-1b-J8X"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -730,12 +652,6 @@
                         <outlet property="cameraRoomOne" destination="TfX-ba-qIA" id="85u-Eb-Joz"/>
                         <outlet property="cameraRoomTwo" destination="LgC-cc-hdw" id="zWy-p0-ceQ"/>
                         <outlet property="cameraSalon" destination="wl4-Py-3Uv" id="qwo-q8-ljU"/>
-                        <outlet property="fanOneLabel" destination="1xw-fU-lKK" id="pUL-zj-ZPn"/>
-                        <outlet property="fanRoomOne" destination="MDi-bL-Xrr" id="xbu-hO-CfE"/>
-                        <outlet property="fanRoomTwo" destination="isK-je-uT2" id="iDj-T7-DVO"/>
-                        <outlet property="fanSalon" destination="eLU-RI-jab" id="8Hc-gk-2HL"/>
-                        <outlet property="fanSalonLabel" destination="adN-Ht-kzR" id="8Zk-DG-G0c"/>
-                        <outlet property="fanTwoLabel" destination="KEN-EX-EZu" id="Jh9-Vt-rk4"/>
                         <outlet property="lampRoomOne" destination="dUu-ab-8nd" id="75Z-hv-3Ap"/>
                         <outlet property="lampRoomTwo" destination="Bvc-NA-2tE" id="nZr-n5-VWD"/>
                         <outlet property="lampSalon" destination="P7A-ga-Myf" id="KZm-J0-gN1"/>
@@ -745,7 +661,88 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98B-JJ-AIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2124" y="806"/>
+            <point key="canvasLocation" x="2100" y="783.50824587706154"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="6Tp-Nu-sRN">
+            <objects>
+                <viewController id="GgY-hG-M8s" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="nRd-wl-Ttd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g2U-jR-dCS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q8V-7M-GA0">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="199"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MXI-F9-Ojm">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wqo-14-ZcO">
+                                                        <rect key="frame" x="0.0" y="10" width="51.5" height="20.5"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="va1-jn-UhG">
+                                                        <rect key="frame" x="50" y="40.5" width="275" height="88.5"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVb-e6-UZ1">
+                                                                <rect key="frame" x="0.0" y="0.0" width="132.5" height="88.5"/>
+                                                                <state key="normal" title="Button"/>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9rB-Zo-0VN">
+                                                                <rect key="frame" x="142.5" y="0.0" width="132.5" height="88.5"/>
+                                                                <state key="normal" title="Button"/>
+                                                            </button>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="va1-jn-UhG" secondAttribute="bottom" constant="20" id="DYd-YN-bv6"/>
+                                                    <constraint firstItem="va1-jn-UhG" firstAttribute="top" secondItem="Wqo-14-ZcO" secondAttribute="bottom" constant="10" id="ab6-7P-D0E"/>
+                                                    <constraint firstAttribute="trailing" secondItem="va1-jn-UhG" secondAttribute="trailing" constant="50" id="cEo-tU-Ame"/>
+                                                    <constraint firstItem="Wqo-14-ZcO" firstAttribute="leading" secondItem="MXI-F9-Ojm" secondAttribute="leading" id="dfI-qm-QfC"/>
+                                                    <constraint firstItem="va1-jn-UhG" firstAttribute="leading" secondItem="MXI-F9-Ojm" secondAttribute="leading" constant="50" id="dzW-K2-ixx"/>
+                                                    <constraint firstItem="Wqo-14-ZcO" firstAttribute="top" secondItem="MXI-F9-Ojm" secondAttribute="top" constant="10" id="fP3-I4-QZt"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="MXI-F9-Ojm" secondAttribute="bottom" constant="50" id="Ing-up-5ed"/>
+                                            <constraint firstAttribute="trailing" secondItem="MXI-F9-Ojm" secondAttribute="trailing" id="Xd3-DT-cbs"/>
+                                            <constraint firstAttribute="height" constant="199" id="cn2-70-B8d"/>
+                                            <constraint firstItem="MXI-F9-Ojm" firstAttribute="top" secondItem="q8V-7M-GA0" secondAttribute="top" id="lNF-Vk-zfG"/>
+                                            <constraint firstItem="MXI-F9-Ojm" firstAttribute="leading" secondItem="q8V-7M-GA0" secondAttribute="leading" id="m1c-KU-eEW"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="q8V-7M-GA0" firstAttribute="width" secondItem="g2U-jR-dCS" secondAttribute="width" id="EHU-1r-H3l"/>
+                                    <constraint firstItem="q8V-7M-GA0" firstAttribute="top" secondItem="g2U-jR-dCS" secondAttribute="top" id="PMb-PT-pzT"/>
+                                    <constraint firstAttribute="bottom" secondItem="q8V-7M-GA0" secondAttribute="bottom" constant="448" id="YVk-fB-VDJ"/>
+                                    <constraint firstItem="q8V-7M-GA0" firstAttribute="leading" secondItem="g2U-jR-dCS" secondAttribute="leading" id="cUk-zM-bgc"/>
+                                    <constraint firstAttribute="trailing" secondItem="q8V-7M-GA0" secondAttribute="trailing" id="nRC-tK-wMb"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g2U-jR-dCS" firstAttribute="leading" secondItem="McG-ye-Z5U" secondAttribute="leading" id="nHg-7i-AvC"/>
+                            <constraint firstItem="g2U-jR-dCS" firstAttribute="top" secondItem="McG-ye-Z5U" secondAttribute="top" id="xER-Il-cWI"/>
+                            <constraint firstItem="g2U-jR-dCS" firstAttribute="trailing" secondItem="McG-ye-Z5U" secondAttribute="trailing" id="xNp-b1-RLR"/>
+                            <constraint firstItem="g2U-jR-dCS" firstAttribute="bottom" secondItem="McG-ye-Z5U" secondAttribute="bottom" id="zNq-ZT-NtA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="McG-ye-Z5U"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RXj-nD-1z8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3136.8000000000002" y="465.51724137931041"/>
         </scene>
         <!--Siri-->
         <scene sceneID="mQc-Bd-6kd">
@@ -797,12 +794,32 @@
                                     <segue destination="BYZ-38-t0r" kind="show" identifier="signOutSegue" id="8W7-A4-5f9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gtZ-nn-Rju">
+                                <rect key="frame" x="164" y="386" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="change:" destination="y0w-oL-RHJ" eventType="touchUpInside" id="C8i-jc-r5j"/>
+                                    <action selector="changeLang:" destination="y0w-oL-RHJ" eventType="touchUpInside" id="u0A-YS-LYM"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ass-VY-5tX">
+                                <rect key="frame" x="146" y="146" width="83" height="42"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <color key="textColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <viewLayoutGuide key="safeArea" id="wag-XJ-WD5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Setting" image="gear" id="csm-D4-o3o"/>
                     <navigationItem key="navigationItem" id="klw-Vd-PmK"/>
+                    <connections>
+                        <outlet property="change" destination="gtZ-nn-Rju" id="goy-WE-jhY"/>
+                        <outlet property="lang" destination="ass-VY-5tX" id="ejW-v0-qaE"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ave-y8-QTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -834,7 +851,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ceC-ea-ht9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3865" y="-160"/>
+            <point key="canvasLocation" x="3417" y="-235"/>
         </scene>
         <!--Main Tab Bar Controller-->
         <scene sceneID="ANz-3y-OqH">
@@ -860,7 +877,6 @@
     <resources>
         <image name="cctv" width="30" height="30"/>
         <image name="email" width="30" height="30"/>
-        <image name="flower" width="30" height="30"/>
         <image name="gear" width="30" height="30"/>
         <image name="home" width="30" height="30"/>
         <image name="lightbulb-off" width="29" height="30"/>

@@ -6,11 +6,17 @@ target 'GP2' do
   use_frameworks!
 
   # Pods for GP2
-	pod 'Firebase/Core'
+	  pod 'Localize-Swift'
+
+pod 'Firebase/Core'
+
 	pod 'Firebase/Database'
 	pod 'Firebase/Auth'
 	pod 'GoogleSignIn'
-  target 'GP2Tests' do
+
+        pod 'GoogleAPIClientForREST/Sheets', '~> 1.2.1'
+  
+target 'GP2Tests' do
     inherit! :search_paths
     # Pods for testing
   end

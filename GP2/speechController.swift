@@ -11,9 +11,22 @@ import Firebase
 class speechController: UIViewController {
 
 
-  
+    @IBOutlet weak var lang: UILabel!
+    
+    @IBOutlet weak var change: UIButton!
+ 
     
     
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        // Do any additional setup after loading the view.
+    }
+    
+    
+    @IBAction func changeLang(_ sender: Any) {
+    }
     
     
     

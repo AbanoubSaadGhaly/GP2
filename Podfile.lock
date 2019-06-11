@@ -37,6 +37,11 @@ PODS:
     - FirebaseCore (~> 6.0)
     - GoogleUtilities/Environment (~> 6.0)
     - GoogleUtilities/UserDefaults (~> 6.0)
+  - GoogleAPIClientForREST/Core (1.2.1):
+    - GTMSessionFetcher (>= 1.1.7)
+  - GoogleAPIClientForREST/Sheets (1.2.1):
+    - GoogleAPIClientForREST/Core
+    - GTMSessionFetcher (>= 1.1.7)
   - GoogleAppMeasurement (6.0.0):
     - GoogleUtilities/AppDelegateSwizzler (~> 6.0)
     - GoogleUtilities/MethodSwizzler (~> 6.0)
@@ -73,8 +78,13 @@ PODS:
     - GoogleUtilities/Logger
   - GoogleUtilities/UserDefaults (6.0.0):
     - GoogleUtilities/Logger
+  - GTMSessionFetcher (1.2.1):
+    - GTMSessionFetcher/Full (= 1.2.1)
   - GTMSessionFetcher/Core (1.2.1)
+  - GTMSessionFetcher/Full (1.2.1):
+    - GTMSessionFetcher/Core (= 1.2.1)
   - leveldb-library (1.20)
+  - Localize-Swift (2.0.0)
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -85,7 +95,9 @@ DEPENDENCIES:
   - Firebase/Auth
   - Firebase/Core
   - Firebase/Database
+  - GoogleAPIClientForREST/Sheets (~> 1.2.1)
   - GoogleSignIn
+  - Localize-Swift
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -96,12 +108,14 @@ SPEC REPOS:
     - FirebaseCore
     - FirebaseDatabase
     - FirebaseInstanceID
+    - GoogleAPIClientForREST
     - GoogleAppMeasurement
     - GoogleSignIn
     - GoogleToolboxForMac
     - GoogleUtilities
     - GTMSessionFetcher
     - leveldb-library
+    - Localize-Swift
     - nanopb
 
 SPEC CHECKSUMS:
@@ -112,14 +126,16 @@ SPEC CHECKSUMS:
   FirebaseCore: e38f025287b413255a53acc1945d048a112047f7
   FirebaseDatabase: f48e067716864be2b855cf716b927ef375d6cfa0
   FirebaseInstanceID: 0e0348a3c00a734fa376a070f5ad4533ad975cb5
+  GoogleAPIClientForREST: a8b95a252014ce2e618df6b75dc72eca2c00b4af
   GoogleAppMeasurement: 7f028ea162b72c8f326daec74afc95d94f7a47d6
   GoogleSignIn: 7ff245e1a7b26d379099d3243a562f5747e23d39
   GoogleToolboxForMac: ff31605b7d66400dcec09bed5861689aebadda4d
   GoogleUtilities: f1faafc033ea203adf1783ce00af455bb99d0e5b
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  Localize-Swift: c798ec9286494866f7068f85f7c71283ac5bdab4
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 7e570819b1de282b6fde4be0a5d1daaf202de1c0
+PODFILE CHECKSUM: cadf087f082df8de9bb43213a596c0c11fcfb925
 
 COCOAPODS: 1.6.1

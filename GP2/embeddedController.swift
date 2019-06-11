@@ -10,22 +10,127 @@ import UIKit
 import Firebase
 class embeddedController: UIViewController {
 
-   
+   //button outlets
     @IBOutlet weak var lampRoomOne: UIButton!
     @IBOutlet weak var cameraRoomOne: UIButton!
-    @IBOutlet weak var fanRoomOne: UIButton!
-    @IBOutlet weak var fanOneLabel: UILabel!
+   
+   
     @IBOutlet weak var lampRoomTwo: UIButton!
     @IBOutlet weak var cameraRoomTwo: UIButton!
-    @IBOutlet weak var fanRoomTwo: UIButton!
-    @IBOutlet weak var fanTwoLabel: UILabel!
+   
+   
     @IBOutlet weak var lampSalon: UIButton!
     @IBOutlet weak var cameraSalon: UIButton!
-    @IBOutlet weak var fanSalon: UIButton!
-    @IBOutlet weak var fanSalonLabel: UILabel!
+    
+   
     @IBOutlet weak var openCloseDoor: UIButton!
     @IBOutlet weak var cameraDoor: UIButton!
     @IBOutlet weak var sensorWarnings: UILabel!
+    
+    //Button actions
+    //flags
+    var flag0 = 1
+    var flag1 = 1
+    var flag2 = 1
+
+    @IBAction func lampRoom1(_ sender: UIButton) {
+        
+        if (flag0 == 1){
+            room1Light(state: "010101")
+            flag0 = 0
+        }
+        else if (flag0 == 0){
+            room1Light(state: "101010")
+            flag0 = 1
+        }
+        
+        
+    }
+    
+    
+    @IBAction func cameraRoom1(_ sender: UIButton) {
+   
+        
+        if (flag1 == 1){
+            room1Fan (state: "010101")
+
+            flag1 = 0
+        }
+        else if (flag1 == 0){
+            room1Fan (state: "101010")
+
+            flag1 = 1
+        }
+        
+        
+    }
+    
+    
+    @IBAction func fanRoom1(_ sender: UISlider) {
+        
+        let currentValue = Float(sender.value)
+        if (currentValue <= Float(0.25) && currentValue >= Float(0.0))
+        {   room1Fan (state: "010101")
+        }
+        else    if (currentValue >= Float(0.25) && currentValue <= Float(0.5))
+        {   room1Fan (state: "101001")
+        }
+        else    if (currentValue >= Float(0.5) && currentValue <= Float(0.75))
+        {   room1Fan (state: "101001")
+        }
+        else    if (currentValue >= Float(0.75) && currentValue <= Float(1.0))
+        {   room1Fan (state: "101001")
+        }
+        
+    }
+    
+    
+  
+    
+    
+    @IBAction func lampRoom2(_ sender: UIButton){
+    }
+    
+    
+    @IBAction func cameraRoom2(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func fanRoom2(_ sender: UISlider) {
+    }
+    
+    
+    
+  
+    
+    
+    @IBAction func lampSalon(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func cameraSalon(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func fanSalon(_ sender: UISlider) {
+    }
+    
+    
+    
+    
+    @IBAction func openCloseDoor(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func cameraDoor(_ sender: UIButton) {
+    }
+    
+    
+    
+    
+    
+    
+    
     
     
     override func viewDidLoad() {
@@ -33,18 +138,15 @@ class embeddedController: UIViewController {
   //shaping the buttons
         self.applyRoundCorner(lampRoomOne)
         self.applyRoundCorner(cameraRoomOne)
-        self.applyRoundCorner(fanRoomOne)
-        self.applyRoundCorner(fanOneLabel)
+       
         
         self.applyRoundCorner(lampRoomTwo)
         self.applyRoundCorner(cameraRoomTwo)
-        self.applyRoundCorner(fanRoomTwo)
-        self.applyRoundCorner(fanTwoLabel)
+        
        
         self.applyRoundCorner(lampSalon)
         self.applyRoundCorner(cameraSalon)
-        self.applyRoundCorner(fanSalon)
-        self.applyRoundCorner(fanSalonLabel)
+       
        
         self.applyRoundCorner(openCloseDoor)
         self.applyRoundCorner(cameraDoor)
@@ -58,6 +160,25 @@ class embeddedController: UIViewController {
         object.layer.cornerRadius = object.frame.height / 2
         object.layer.masksToBounds = true
     }
+  func room1Light (state : String)
+    {
+        let ref = Database.database().reference()
+        let post : [String : AnyObject] = ["Light" :state as AnyObject]
+        ref.child("Room1").child("Light").setValue(post)
+        
+    
+    }
+    func room1Fan (state : String)
+    {
+        let ref = Database.database().reference()
+        let post : [String : AnyObject] = ["Fan" :state as AnyObject]
+        ref.child("Room1").child("Fan").setValue(post)
+          //let post2 : [String : AnyObject] = ["Fan" :state as AnyObject]
+        // ref.child("Room1").setValue(post2)
+    }
 
-
+    
 }
+    
+    
+
