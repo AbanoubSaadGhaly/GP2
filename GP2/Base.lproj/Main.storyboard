@@ -13,7 +13,7 @@
         <!--Sign In Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignInController" customModule="GP2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="VC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="BYZ-38-t0r" customClass="SignInController" customModule="GP2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -24,7 +24,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AsRara" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9SK-x3-uK0">
                                         <rect key="frame" x="71" y="40" width="233" height="111"/>
                                         <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="69"/>
-                                        <color key="textColor" red="0.0" green="0.82409731218497417" blue="0.60235554225438637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
                                 </subviews>
@@ -44,7 +44,7 @@
                                             <constraint firstAttribute="height" constant="46" id="6DS-CH-pgg"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="26"/>
-                                        <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -89,7 +89,7 @@
                                         <rect key="frame" x="85" y="35" width="205" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <state key="normal" title="Login">
-                                            <color key="titleColor" red="0.90195919689119175" green="0.70721731430091306" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4PI-jx-oyQ"/>
@@ -110,7 +110,7 @@
                                         <rect key="frame" x="46" y="8" width="283" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="If you don't have account:SignUp">
-                                            <color key="titleColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="doS-SN-cPb" kind="show" id="abt-Fl-lrp"/>
@@ -179,6 +179,7 @@
                         <outlet property="loginLogo" destination="MAK-Cb-VAo" id="SWy-9Y-977"/>
                         <outlet property="passwordTF" destination="7Jx-Ro-PHb" id="duD-Iv-f4Z"/>
                         <outlet property="signInLogo" destination="RHY-vm-q8N" id="WId-Q5-4Cr"/>
+                        <outlet property="signUpBtn" destination="4nR-8L-GrG" id="RM5-8g-W3e"/>
                         <segue destination="e4l-Dn-Mjy" kind="show" identifier="signInSegue" id="u6s-1R-JRE"/>
                     </connections>
                 </viewController>
@@ -197,15 +198,18 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PCV-IM-Qe6" userLabel="Logo">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="191"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="SCj-UJ-fRa">
-                                        <rect key="frame" x="71" y="30" width="233" height="131"/>
-                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AsRara" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AGf-8J-YsI">
+                                        <rect key="frame" x="71" y="40" width="233" height="111"/>
+                                        <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="69"/>
+                                        <color key="textColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="SCj-UJ-fRa" firstAttribute="top" secondItem="PCV-IM-Qe6" secondAttribute="top" constant="30" id="44v-nT-6ne"/>
-                                    <constraint firstAttribute="trailing" secondItem="SCj-UJ-fRa" secondAttribute="trailing" constant="71" id="PQg-iV-c6y"/>
-                                    <constraint firstAttribute="bottom" secondItem="SCj-UJ-fRa" secondAttribute="bottom" constant="30" id="RBS-fC-I60"/>
-                                    <constraint firstItem="SCj-UJ-fRa" firstAttribute="leading" secondItem="PCV-IM-Qe6" secondAttribute="leading" constant="71" id="xwb-9n-nrl"/>
+                                    <constraint firstAttribute="bottom" secondItem="AGf-8J-YsI" secondAttribute="bottom" constant="40" id="J1i-jH-7kU"/>
+                                    <constraint firstItem="AGf-8J-YsI" firstAttribute="leading" secondItem="PCV-IM-Qe6" secondAttribute="leading" constant="71" id="LYA-EU-OvW"/>
+                                    <constraint firstAttribute="trailing" secondItem="AGf-8J-YsI" secondAttribute="trailing" constant="71" id="X4U-6X-5he"/>
+                                    <constraint firstItem="AGf-8J-YsI" firstAttribute="top" secondItem="PCV-IM-Qe6" secondAttribute="top" constant="40" id="fUm-bb-Nqs"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dQd-VQ-bvT" userLabel="signup">
@@ -217,7 +221,7 @@
                                             <constraint firstAttribute="height" constant="46" id="Jjk-9o-1WI"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="26"/>
-                                        <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="textColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -272,7 +276,7 @@
                                         <rect key="frame" x="85" y="20" width="205" height="44"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="26"/>
                                         <state key="normal" title="Sign UP">
-                                            <color key="titleColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="signUp:" destination="doS-SN-cPb" eventType="touchUpInside" id="oFC-vE-tdV"/>
@@ -293,7 +297,7 @@
                                         <rect key="frame" x="63" y="21" width="249" height="35"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                         <state key="normal" title="If you have account:Sign In">
-                                            <color key="titleColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <segue destination="BYZ-38-t0r" kind="show" id="PeC-BN-hz3"/>
@@ -325,7 +329,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="JUn-I4-zlc" firstAttribute="trailing" secondItem="MY3-Vn-gPb" secondAttribute="trailing" id="1VC-i9-9PZ"/>
                             <constraint firstItem="dQd-VQ-bvT" firstAttribute="trailing" secondItem="MY3-Vn-gPb" secondAttribute="trailing" id="1bu-dz-r2r"/>
@@ -355,7 +359,10 @@
                         <viewLayoutGuide key="safeArea" id="MY3-Vn-gPb"/>
                     </view>
                     <connections>
-                        <outlet property="gifView" destination="SCj-UJ-fRa" id="8UF-Tg-ACH"/>
+                        <outlet property="backToSignIn" destination="gZP-Zx-2LA" id="wWG-rp-BC0"/>
+                        <outlet property="logo2" destination="AGf-8J-YsI" id="hSG-la-ira"/>
+                        <outlet property="signUpBotn" destination="kst-bi-9T8" id="zTX-vi-yLI"/>
+                        <outlet property="signUpLogo" destination="Sm9-zd-8mV" id="1nU-Oh-RWH"/>
                         <outlet property="userEmailTF" destination="8fv-nj-wKn" id="qry-oa-Bf6"/>
                         <outlet property="userNameTF" destination="jrh-Po-KE6" id="cOA-8h-Q3c"/>
                         <outlet property="userPasswordTF" destination="RqM-ka-Dxy" id="RtF-4d-Ku4"/>
@@ -383,7 +390,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzQ-if-bXT" userLabel="Room 1">
                                                 <rect key="frame" x="8" y="28" width="96" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="AUm-gf-brU">
@@ -391,7 +398,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dUu-ab-8nd">
                                                         <rect key="frame" x="0.0" y="0.0" width="172.5" height="50"/>
-                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Lamp" image="lightbulb-off">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
@@ -401,7 +408,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TfX-ba-qIA">
                                                         <rect key="frame" x="182.5" y="0.0" width="172.5" height="50"/>
-                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Camera" image="cctv">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
@@ -417,12 +424,12 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nxv-SX-w9T" userLabel="Room 1">
                                                 <rect key="frame" x="164" y="134" width="47" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="DtL-yK-38F">
                                                 <rect key="frame" x="6" y="180" width="363" height="31"/>
-                                                <color key="tintColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="fanRoom1:" destination="8mM-Te-1Xj" eventType="valueChanged" id="RlY-1v-ZT7"/>
                                                 </connections>
@@ -430,7 +437,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Room 2" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NSN-0q-GoP">
                                                 <rect key="frame" x="8" y="220" width="99.5" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="y45-24-dV9">
@@ -438,7 +445,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvc-NA-2tE">
                                                         <rect key="frame" x="0.0" y="0.0" width="172.5" height="50"/>
-                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Lamp" image="lightbulb-off">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
@@ -448,7 +455,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LgC-cc-hdw">
                                                         <rect key="frame" x="182.5" y="0.0" width="172.5" height="50"/>
-                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Camera" image="cctv">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
@@ -464,12 +471,12 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Asm-Q8-UyS" userLabel="Room 1">
                                                 <rect key="frame" x="164" y="326" width="47" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="k3k-Hl-k2b">
                                                 <rect key="frame" x="6" y="372" width="363" height="31"/>
-                                                <color key="tintColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="fanRoom2:" destination="8mM-Te-1Xj" eventType="valueChanged" id="pRY-hu-WdI"/>
                                                 </connections>
@@ -477,7 +484,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Salon" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yEk-r9-re3" userLabel="Room 1">
                                                 <rect key="frame" x="8" y="412" width="73" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZFc-7I-gcu">
@@ -485,7 +492,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7A-ga-Myf">
                                                         <rect key="frame" x="0.0" y="0.0" width="172.5" height="50"/>
-                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Lamp" image="lightbulb-off">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
@@ -495,7 +502,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wl4-Py-3Uv">
                                                         <rect key="frame" x="182.5" y="0.0" width="172.5" height="50"/>
-                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Camera" image="cctv">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
@@ -511,12 +518,12 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fan" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CJW-zl-2B8" userLabel="Room 1">
                                                 <rect key="frame" x="164" y="518" width="47" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iVH-nA-3oD">
                                                 <rect key="frame" x="6" y="564" width="363" height="31"/>
-                                                <color key="tintColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="tintColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <connections>
                                                     <action selector="fanSalon:" destination="8mM-Te-1Xj" eventType="valueChanged" id="59G-5z-x1U"/>
                                                 </connections>
@@ -524,7 +531,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Door" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgV-tR-k1g">
                                                 <rect key="frame" x="8" y="604" width="63" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="T1h-Fe-0ru">
@@ -532,7 +539,7 @@
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E9f-eH-9S4">
                                                         <rect key="frame" x="0.0" y="0.0" width="172.5" height="50"/>
-                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="OPen/Close" image="home">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
@@ -542,7 +549,7 @@
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="150" placeholderIntrinsicHeight="50" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bJO-lM-BDY">
                                                         <rect key="frame" x="182.5" y="0.0" width="172.5" height="50"/>
-                                                        <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        <color key="backgroundColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <state key="normal" title="Camera" image="cctv">
                                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                                         </state>
@@ -558,12 +565,12 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Notification" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1CW-A6-L6f">
                                                 <rect key="frame" x="8" y="710" width="149" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                                <color key="textColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="textColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="sensor warnings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iQS-VN-0D6">
                                                 <rect key="frame" x="8" y="754" width="359" height="45"/>
-                                                <color key="backgroundColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="Ymf-Fo-WrS"/>
                                                 </constraints>
@@ -572,7 +579,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="T1h-Fe-0ru" secondAttribute="trailing" constant="10" id="1ga-Sm-Ggd"/>
                                             <constraint firstItem="CJW-zl-2B8" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="164" id="26u-On-hTF"/>
@@ -652,10 +659,18 @@
                         <outlet property="cameraRoomOne" destination="TfX-ba-qIA" id="85u-Eb-Joz"/>
                         <outlet property="cameraRoomTwo" destination="LgC-cc-hdw" id="zWy-p0-ceQ"/>
                         <outlet property="cameraSalon" destination="wl4-Py-3Uv" id="qwo-q8-ljU"/>
+                        <outlet property="door" destination="hgV-tR-k1g" id="fNL-UZ-09t"/>
+                        <outlet property="fanOne" destination="Nxv-SX-w9T" id="v1s-XV-rDE"/>
+                        <outlet property="fanSalon" destination="CJW-zl-2B8" id="7lz-Mz-c8X"/>
+                        <outlet property="fanTwo" destination="Asm-Q8-UyS" id="Do6-wn-4bz"/>
                         <outlet property="lampRoomOne" destination="dUu-ab-8nd" id="75Z-hv-3Ap"/>
                         <outlet property="lampRoomTwo" destination="Bvc-NA-2tE" id="nZr-n5-VWD"/>
                         <outlet property="lampSalon" destination="P7A-ga-Myf" id="KZm-J0-gN1"/>
+                        <outlet property="notifications" destination="1CW-A6-L6f" id="rpd-E8-knn"/>
                         <outlet property="openCloseDoor" destination="E9f-eH-9S4" id="EuI-Y0-5dp"/>
+                        <outlet property="roomOne" destination="YzQ-if-bXT" id="w3v-BJ-yLM"/>
+                        <outlet property="roomTwo" destination="NSN-0q-GoP" id="44r-yN-MJT"/>
+                        <outlet property="salon" destination="yEk-r9-re3" id="kVH-ru-Gd1"/>
                         <outlet property="sensorWarnings" destination="iQS-VN-0D6" id="bfg-Cz-O80"/>
                     </connections>
                 </viewController>
@@ -780,7 +795,7 @@
         <!--Setting-->
         <scene sceneID="tAC-xO-oW0">
             <objects>
-                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="y0w-oL-RHJ" customClass="speechController" customModule="GP2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="vm" useStoryboardIdentifierAsRestorationIdentifier="YES" id="y0w-oL-RHJ" customClass="speechController" customModule="GP2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="C3a-1m-Lf0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -799,8 +814,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
-                                    <action selector="change:" destination="y0w-oL-RHJ" eventType="touchUpInside" id="C8i-jc-r5j"/>
-                                    <action selector="changeLang:" destination="y0w-oL-RHJ" eventType="touchUpInside" id="u0A-YS-LYM"/>
+                                    <action selector="doChange:" destination="y0w-oL-RHJ" eventType="touchUpInside" id="GWf-bc-NhB"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ass-VY-5tX">
@@ -811,13 +825,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
+                        <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="wag-XJ-WD5"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Setting" image="gear" id="csm-D4-o3o"/>
                     <navigationItem key="navigationItem" id="klw-Vd-PmK"/>
                     <connections>
-                        <outlet property="change" destination="gtZ-nn-Rju" id="goy-WE-jhY"/>
                         <outlet property="lang" destination="ass-VY-5tX" id="ejW-v0-qaE"/>
                     </connections>
                 </viewController>
@@ -856,11 +869,11 @@
         <!--Main Tab Bar Controller-->
         <scene sceneID="ANz-3y-OqH">
             <objects>
-                <tabBarController useStoryboardIdentifierAsRestorationIdentifier="YES" id="e4l-Dn-Mjy" customClass="MainTabBarController" customModule="GP2" customModuleProvider="target" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="vm2" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e4l-Dn-Mjy" customClass="MainTabBarController" customModule="GP2" customModuleProvider="target" sceneMemberID="viewController">
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="ktL-UQ-PMH">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.90195919690000004" green="0.70721731430000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="barTintColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="selectedImageTintColor" name="textColor" catalog="System" colorSpace="catalog"/>
                     </tabBar>
                     <connections>
@@ -884,7 +897,7 @@
         <image name="microphone" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="u6s-1R-JRE"/>
+        <segue reference="6As-HC-Hqs"/>
         <segue reference="8W7-A4-5f9"/>
     </inferredMetricsTieBreakers>
 </document>

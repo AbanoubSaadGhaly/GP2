@@ -13,7 +13,6 @@ class speechController: UIViewController {
 
     @IBOutlet weak var lang: UILabel!
     
-    @IBOutlet weak var change: UIButton!
  
     
     
@@ -24,9 +23,28 @@ class speechController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    @IBAction func doChange(_ sender: Any) {
+        if LocalizationSystem.sharedInstance.getLanguage() == "ar"{
+            LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")
+            UIView.appearance().semanticContentAttribute = .forceLeftToRight
+        }
+        else{
+            LocalizationSystem.sharedInstance.setLanguage(languageCode: "ar")
+            UIView.appearance().semanticContentAttribute = .forceRightToLeft
+
+        }
     
-    @IBAction func changeLang(_ sender: Any) {
+     let vm = self.storyboard?.instantiateViewController(withIdentifier: "vm2")   as! MainTabBarController
+       let appDlg = UIApplication.shared.delegate as? AppDelegate
+     appDlg?.window?.rootViewController = vm
+   
+
+
+
+
     }
+    
+  
     
     
     

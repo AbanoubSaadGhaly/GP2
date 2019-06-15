@@ -11,11 +11,16 @@ import Firebase
 import FirebaseAuth
 class SignUpController: UIViewController {
 
+    @IBOutlet weak var signUpBotn: UIButton!
+    @IBOutlet weak var signUpLogo: UILabel!
     @IBOutlet weak var userEmailTF: UITextField!
     @IBOutlet weak var userNameTF: UITextField!
     @IBOutlet weak var userPasswordTF: UITextField!
-  
-    @IBOutlet var gifView: UIImageView!
+    @IBOutlet weak var backToSignIn: UIButton!
+   
+    @IBOutlet weak var logo2: UILabel!
+    
+    // @IBOutlet var gifView: UIImageView!
     
     @IBAction func signUp(_ sender: Any) {
         
@@ -67,8 +72,19 @@ class SignUpController: UIViewController {
         
         let userImage = UIImage(named: "man")
         addLeftImageToTextField(txtField: userNameTF, andImage: userImage! )
-        gifView.loadGif(name: "launchScreen")
+       // gifView.loadGif(name: "launchScreen")
+        
+     //   Logo.text  = LocalizationSystem.sharedInstance.localizedStringForKey(key: "9SK-x3-uK0.text", comment: " ")
+         logo2.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: "9SK-x3-uK0.text", comment: " ")
+        signUpLogo.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: "Sm9-zd-8mV.text", comment: " ")
+        
+        signUpBotn.setTitle(LocalizationSystem.sharedInstance.localizedStringForKey(key: "kst-bi-9T8.normalTitle", comment: " "), for: .normal)
+        backToSignIn.setTitle(LocalizationSystem.sharedInstance.localizedStringForKey(key: "gZP-Zx-2LA.normalTitle", comment: " "), for: .normal)
 
+       // loginLogo.setTitle(LocalizationSystem.sharedInstance.localizedStringForKey(key: "MAK-Cb-VAo.normalTitle", comment: " "), for: .normal)
+        userEmailTF.placeholder  = LocalizationSystem.sharedInstance.localizedStringForKey(key: "8fv-nj-wKn.placeholder", comment: " ")
+        userPasswordTF.placeholder  = LocalizationSystem.sharedInstance.localizedStringForKey(key: "7Jx-Ro-PHb.placeholder", comment: " ")
+       userNameTF.placeholder  = LocalizationSystem.sharedInstance.localizedStringForKey(key: "jrh-Po-KE6.placeholder", comment: " ")
     }
     func addLeftImageToTextField(txtField: UITextField, andImage img: UIImage){
         let leftImageView = UIImageView(frame: CGRect(x: 0.0, y: 0.0, width: img.size.width, height: img.size.height))

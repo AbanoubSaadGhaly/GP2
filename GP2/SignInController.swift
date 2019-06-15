@@ -15,10 +15,8 @@ class SignInController: UIViewController {
     
     
     
+    @IBOutlet weak var signUpBtn: UIButton!
     @IBOutlet weak var loginLogo: UIButton!
-    @IBOutlet weak var signUpLogo2: UIButton!
-    @IBOutlet weak var signUpLogo: UILabel!
-    @IBOutlet weak var firebaseLogo: UIImageView!
     @IBOutlet weak var signInLogo: UILabel!
     @IBOutlet weak var Logo: UILabel!
     @IBOutlet weak var emailTF: UITextField!
@@ -63,11 +61,15 @@ class SignInController: UIViewController {
         addLeftImageToTextField(txtField: passwordTF, andImage: passwordImage! )
         
         
+        Logo.text  = LocalizationSystem.sharedInstance.localizedStringForKey(key: "9SK-x3-uK0.text", comment: " ")
         
+        signInLogo.text = LocalizationSystem.sharedInstance.localizedStringForKey(key: "RHY-vm-q8N.text", comment: " ")
         
-        
-        
-        
+        signUpBtn.setTitle(LocalizationSystem.sharedInstance.localizedStringForKey(key: "4nR-8L-GrG.normalTitle", comment: " "), for: .normal)
+        loginLogo.setTitle(LocalizationSystem.sharedInstance.localizedStringForKey(key: "MAK-Cb-VAo.normalTitle", comment: " "), for: .normal)
+       emailTF.placeholder  = LocalizationSystem.sharedInstance.localizedStringForKey(key: "8fv-nj-wKn.placeholder", comment: " ")
+       passwordTF.placeholder  = LocalizationSystem.sharedInstance.localizedStringForKey(key: "7Jx-Ro-PHb.placeholder", comment: " ")
+
     }
     func addLeftImageToTextField(txtField: UITextField, andImage img: UIImage){
         let leftImageView = UIImageView(frame: CGRect(x: 0.0, y: 0.0, width: img.size.width, height: img.size.height))
