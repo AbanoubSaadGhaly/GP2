@@ -15,6 +15,8 @@ pod 'Firebase/Core'
 	pod 'GoogleSignIn'
 
         pod 'GoogleAPIClientForREST/Sheets', '~> 1.2.1'
+pod 'SwiftyJSON'
+pod 'Alamofire'
   
 target 'GP2Tests' do
     inherit! :search_paths

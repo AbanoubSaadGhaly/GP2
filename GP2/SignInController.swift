@@ -54,10 +54,10 @@ class SignInController: UIViewController {
     }
     override func viewDidLoad() {
         super.viewDidLoad()
-        let emailImage = UIImage(named: "email")
+        let emailImage = UIImage(named: "email-7")
         addLeftImageToTextField(txtField: emailTF, andImage: emailImage! )
         
-        let passwordImage = UIImage(named: "lock")
+        let passwordImage = UIImage(named: "lock-8")
         addLeftImageToTextField(txtField: passwordTF, andImage: passwordImage! )
         
         

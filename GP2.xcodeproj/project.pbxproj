@@ -12,6 +12,15 @@
 		A1B82131CE669B09AB715D90 /* Pods_GP2UITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E026C411CEFC6CB1A7B160 /* Pods_GP2UITests.framework */; };
 		B20EA1DF22AFF7ED00EAE654 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = B20EA1E122AFF7ED00EAE654 /* Localizable.strings */; };
 		B20EA1E422AFFAAE00EAE654 /* LocalizationSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20EA1E322AFFAAE00EAE654 /* LocalizationSystem.swift */; };
+		B20EA1E622B712A800EAE654 /* IMG_20190617_015953.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B20EA1E522B712A800EAE654 /* IMG_20190617_015953.jpg */; };
+		B20EA1E822B712E600EAE654 /* IMG_20190617_020044.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B20EA1E722B712E500EAE654 /* IMG_20190617_020044.jpg */; };
+		B20EA1EA22B712EC00EAE654 /* IMG_20190617_015923.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B20EA1E922B712EB00EAE654 /* IMG_20190617_015923.jpg */; };
+		B20EA1EC22B712F700EAE654 /* IMG_20190617_020024.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B20EA1EB22B712F700EAE654 /* IMG_20190617_020024.jpg */; };
+		B20EA1EF22B8E7BA00EAE654 /* wholeProject.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B20EA1ED22B8E7B900EAE654 /* wholeProject.xcdatamodeld */; };
+		B20EA1F122B8EC5200EAE654 /* oneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20EA1F022B8EC5200EAE654 /* oneCell.swift */; };
+		B20EA1F322B8F1EA00EAE654 /* oneTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20EA1F222B8F1EA00EAE654 /* oneTableView.swift */; };
+		B20EA1F522B8F54700EAE654 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20EA1F422B8F54700EAE654 /* WeatherDataModel.swift */; };
+		B20EA1F722B8F5BE00EAE654 /* contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20EA1F622B8F5BE00EAE654 /* contacts.swift */; };
 		B20F328C22ACACF100269194 /* speechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20F328B22ACACF100269194 /* speechViewController.swift */; };
 		B218D98322A6B59200A6014C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218D98222A6B59200A6014C /* AppDelegate.swift */; };
 		B218D98522A6B59200A6014C /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218D98422A6B59200A6014C /* SignInController.swift */; };
@@ -60,6 +69,15 @@
 		B20EA1E022AFF7ED00EAE654 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B20EA1E222AFF81000EAE654 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		B20EA1E322AFFAAE00EAE654 /* LocalizationSystem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizationSystem.swift; sourceTree = "<group>"; };
+		B20EA1E522B712A800EAE654 /* IMG_20190617_015953.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_20190617_015953.jpg; sourceTree = "<group>"; };
+		B20EA1E722B712E500EAE654 /* IMG_20190617_020044.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_20190617_020044.jpg; sourceTree = "<group>"; };
+		B20EA1E922B712EB00EAE654 /* IMG_20190617_015923.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_20190617_015923.jpg; sourceTree = "<group>"; };
+		B20EA1EB22B712F700EAE654 /* IMG_20190617_020024.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = IMG_20190617_020024.jpg; sourceTree = "<group>"; };
+		B20EA1EE22B8E7BA00EAE654 /* wholeProject.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = wholeProject.xcdatamodel; sourceTree = "<group>"; };
+		B20EA1F022B8EC5200EAE654 /* oneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = oneCell.swift; sourceTree = "<group>"; };
+		B20EA1F222B8F1EA00EAE654 /* oneTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = oneTableView.swift; sourceTree = "<group>"; };
+		B20EA1F422B8F54700EAE654 /* WeatherDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
+		B20EA1F622B8F5BE00EAE654 /* contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contacts.swift; sourceTree = "<group>"; };
 		B20F328B22ACACF100269194 /* speechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speechViewController.swift; sourceTree = "<group>"; };
 		B218D97F22A6B59200A6014C /* GP2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GP2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B218D98222A6B59200A6014C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -161,6 +179,10 @@
 				B218D9B522A6D12D00A6014C /* SignUpController.swift */,
 				B218D9BD22A6F27D00A6014C /* alertController.swift */,
 				B218D9B722A6D16100A6014C /* MainTabBarController.swift */,
+				B20EA1F622B8F5BE00EAE654 /* contacts.swift */,
+				B20EA1F422B8F54700EAE654 /* WeatherDataModel.swift */,
+				B20EA1F022B8EC5200EAE654 /* oneCell.swift */,
+				B20EA1F222B8F1EA00EAE654 /* oneTableView.swift */,
 				B218D98622A6B59300A6014C /* Main.storyboard */,
 				B218D98C22A6B5AF00A6014C /* Assets.xcassets */,
 				B218D9C522AC8E2300A6014C /* launchScreen.gif */,
@@ -173,8 +195,13 @@
 				B218D9BF22AC3E9200A6014C /* UIImage+Gif.swift */,
 				B218D9C322AC3FCC00A6014C /* launchScreenController.swift */,
 				B20F328B22ACACF100269194 /* speechViewController.swift */,
+				B20EA1ED22B8E7B900EAE654 /* wholeProject.xcdatamodeld */,
 				B20EA1E122AFF7ED00EAE654 /* Localizable.strings */,
 				B20EA1E322AFFAAE00EAE654 /* LocalizationSystem.swift */,
+				B20EA1E722B712E500EAE654 /* IMG_20190617_020044.jpg */,
+				B20EA1E922B712EB00EAE654 /* IMG_20190617_015923.jpg */,
+				B20EA1EB22B712F700EAE654 /* IMG_20190617_020024.jpg */,
+				B20EA1E522B712A800EAE654 /* IMG_20190617_015953.jpg */,
 			);
 			path = GP2;
 			sourceTree = "<group>";
@@ -318,9 +345,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				B218D99022A6B5AF00A6014C /* LaunchScreen.storyboard in Resources */,
+				B20EA1EA22B712EC00EAE654 /* IMG_20190617_015923.jpg in Resources */,
 				B218D9B422A6B74300A6014C /* GoogleService-Info.plist in Resources */,
+				B20EA1EC22B712F700EAE654 /* IMG_20190617_020024.jpg in Resources */,
+				B20EA1E622B712A800EAE654 /* IMG_20190617_015953.jpg in Resources */,
 				B218D9C822AC8E9D00A6014C /* ezgif-2-9678d06e66db.gif in Resources */,
 				B20EA1DF22AFF7ED00EAE654 /* Localizable.strings in Resources */,
+				B20EA1E822B712E600EAE654 /* IMG_20190617_020044.jpg in Resources */,
 				B218D98D22A6B5AF00A6014C /* Assets.xcassets in Resources */,
 				B218D9C622AC8E3600A6014C /* launchScreen.gif in Resources */,
 				B218D98822A6B59300A6014C /* Main.storyboard in Resources */,
@@ -375,11 +406,13 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-GP2/Pods-GP2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleAPIClientForREST/GoogleAPIClientForREST.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/Localize-Swift/Localize_Swift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -387,11 +420,13 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleAPIClientForREST.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Localize_Swift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
@@ -473,17 +508,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B20EA1F322B8F1EA00EAE654 /* oneTableView.swift in Sources */,
 				B218D98522A6B59200A6014C /* SignInController.swift in Sources */,
+				B20EA1F122B8EC5200EAE654 /* oneCell.swift in Sources */,
 				B218D9BC22A6EDB100A6014C /* embeddedController.swift in Sources */,
 				B20F328C22ACACF100269194 /* speechViewController.swift in Sources */,
 				B218D98322A6B59200A6014C /* AppDelegate.swift in Sources */,
 				B218D9BA22A6EC9300A6014C /* speechController.swift in Sources */,
 				B218D9B822A6D16100A6014C /* MainTabBarController.swift in Sources */,
+				B20EA1F722B8F5BE00EAE654 /* contacts.swift in Sources */,
 				B218D9BE22A6F27D00A6014C /* alertController.swift in Sources */,
 				B218D9C022AC3E9400A6014C /* UIImage+Gif.swift in Sources */,
 				B218D9B622A6D12D00A6014C /* SignUpController.swift in Sources */,
+				B20EA1F522B8F54700EAE654 /* WeatherDataModel.swift in Sources */,
 				B20EA1E422AFFAAE00EAE654 /* LocalizationSystem.swift in Sources */,
 				B218D9C422AC3FCC00A6014C /* launchScreenController.swift in Sources */,
+				B20EA1EF22B8E7BA00EAE654 /* wholeProject.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -831,6 +871,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B20EA1ED22B8E7B900EAE654 /* wholeProject.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B20EA1EE22B8E7BA00EAE654 /* wholeProject.xcdatamodel */,
+			);
+			currentVersion = B20EA1EE22B8E7BA00EAE654 /* wholeProject.xcdatamodel */;
+			path = wholeProject.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B218D97722A6B59200A6014C /* Project object */;
 }

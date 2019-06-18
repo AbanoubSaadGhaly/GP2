@@ -2,6 +2,33 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>can add photos to your gallery</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>can open your Gallery</string>
+	<key>NSLocationUsageDescription</key>
+	<string>we need your location to obtain your current weather </string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>we need your location to obtain your current weather </string>
+	<key>NSContactsUsageDescription</key>
+	<string>can use your contacts </string>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSExceptionDomains</key>
+        <dict>
+            <key>openweathermap.org</key>
+            <dict>
+                <key>NSIncludesSubdomains</key>
+                <true/>
+                <key>NSTemporaryExceptionAllowsInsecureHTTPLoads</key>
+                <true/>
+            </dict>
+        </dict>
+    </dict>
+	<key>NSRemindersUsageDescription</key>
+	<string>can use your reminder </string>
+	<key>NSCalendarsUsageDescription</key>
+	<string>can acess your calender </string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
