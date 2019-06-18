@@ -18,16 +18,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="launchScreenController" translatesAutoresizingMaskIntoConstraints="NO" id="hmp-YN-2j7">
-                                <rect key="frame" x="67" y="269" width="240" height="128"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="launchScreenController" image="magazine-unlock-01-2.3.920-_142acd9dfcf947a5a3d99fea2ce9e349.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="hmp-YN-2j7">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
                         </subviews>
-                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="hmp-YN-2j7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="249" id="GDm-By-pLa"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hmp-YN-2j7" secondAttribute="trailing" constant="68" id="YNi-qX-Paz"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="hmp-YN-2j7" secondAttribute="bottom" constant="270" id="gIg-J4-5Ym"/>
-                            <constraint firstItem="hmp-YN-2j7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="67" id="m1K-Bz-AMv"/>
+                            <constraint firstItem="hmp-YN-2j7" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="NRX-Yg-CJN"/>
+                            <constraint firstItem="hmp-YN-2j7" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OAh-dB-VOe"/>
+                            <constraint firstItem="hmp-YN-2j7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nHl-aw-MQm"/>
+                            <constraint firstItem="hmp-YN-2j7" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="vJV-VG-ypa"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -37,7 +37,10 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-321" y="390"/>
+            <point key="canvasLocation" x="-322.39999999999998" y="389.95502248875567"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="magazine-unlock-01-2.3.920-_142acd9dfcf947a5a3d99fea2ce9e349.jpg" width="345.60000610351562" height="614.4000244140625"/>
+    </resources>
 </document>

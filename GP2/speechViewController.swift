@@ -36,7 +36,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate, UINaviga
         // loadReminder()
         //LoadRemoveEvent()
        // loadNotes()
-        openPhotos()
+       // openPhotos()
         //when select weather only
         /*
          locationManager.requestWhenInUseAuthorization()
