@@ -269,6 +269,7 @@ class embeddedController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    twoRoom(setter: 3)
   //shaping the buttons
         self.applyRoundCorner(lampRoomOne)
         self.applyRoundCorner(cameraRoomOne)
@@ -459,9 +460,45 @@ class embeddedController: UIViewController {
     {
         let ref = Database.database().reference()
         let post : [String : AnyObject] = ["Fan" :state as AnyObject]
-        ref.child("salon").child("Fan").setValue(post)
+        ref.child("Salon").child("Fan").setValue(post)
     }
-
+    func twoRoom(setter : Int){
+        roomThree.textColor = .gray
+        lampRoomThree.backgroundColor = .gray
+        cameraRoomThree.backgroundColor = .gray
+        fanThree.textColor = .gray
+        
+        
+        roomFour.textColor = .gray
+        lampRoomFour.backgroundColor = .gray
+        cameraRoomFour.backgroundColor = .gray
+        fanFour.textColor = .gray
+        
+        
+        roomFive.textColor = .gray
+        lampRoomFive.backgroundColor = .gray
+        cameraRoomFive.backgroundColor = .gray
+        fanFive.textColor = .gray
+    }
+    func threeRoom(){
+        roomFour.textColor = .gray
+        lampRoomFour.backgroundColor = .gray
+        cameraRoomFour.backgroundColor = .gray
+        fanFour.textColor = .gray
+        
+        
+        roomFive.textColor = .gray
+        lampRoomFive.backgroundColor = .gray
+        cameraRoomFive.backgroundColor = .gray
+        fanFive.textColor = .gray
+    }
+    func fourRoom(){
+        roomFive.textColor = .gray
+        lampRoomFive.backgroundColor = .gray
+        cameraRoomFive.backgroundColor = .gray
+        fanFive.textColor = .gray
+    }
+    
 }
     
     

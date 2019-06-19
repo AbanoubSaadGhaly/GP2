@@ -51,7 +51,7 @@
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAK-Cb-VAo">
                                         <rect key="frame" x="100" y="390" width="175" height="44"/>
@@ -180,7 +180,7 @@
                                         </constraints>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kst-bi-9T8">
                                         <rect key="frame" x="85" y="425.5" width="205" height="44"/>
@@ -263,7 +263,7 @@
             </objects>
             <point key="canvasLocation" x="39" y="680"/>
         </scene>
-        <!--Home-->
+        <!--Embedded Controller-->
         <scene sceneID="Xcj-7S-UOT">
             <objects>
                 <viewController storyboardIdentifier="embeddedController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="8mM-Te-1Xj" customClass="embeddedController" customModule="GP2" customModuleProvider="target" sceneMemberID="viewController">
@@ -272,7 +272,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HeS-OP-VBO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="1451"/>
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="1500"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Bb-nV-Djh" userLabel="contentView">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="1451"/>
@@ -308,6 +308,7 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="cameraRoom1:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="DU1-QQ-4QF"/>
+                                                            <segue destination="kbs-U2-cae" kind="show" id="7h9-SY-r5i"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -361,6 +362,7 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="cameraRoom2:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="lnY-g3-ia3"/>
+                                                            <segue destination="kbs-U2-cae" kind="show" id="HL7-XU-HUM"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -413,6 +415,7 @@
                                                         <connections>
                                                             <action selector="cameraRoom2:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="v4i-9s-C9J"/>
                                                             <action selector="cameraRoom3:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="IuH-pO-Bm4"/>
+                                                            <segue destination="kbs-U2-cae" kind="show" id="hJ0-dp-5EL"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -469,6 +472,7 @@
                                                         <connections>
                                                             <action selector="cameraRoom2:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="b7s-M2-dsk"/>
                                                             <action selector="cameraRoom4:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="s4j-CB-f1h"/>
+                                                            <segue destination="kbs-U2-cae" kind="show" id="vGn-z7-x9T"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -525,6 +529,7 @@
                                                         <connections>
                                                             <action selector="cameraRoom2:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="574-U8-ZeR"/>
                                                             <action selector="cameraRoom5:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="aaP-jm-Q4X"/>
+                                                            <segue destination="kbs-U2-cae" kind="show" id="hCp-F8-dgx"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -579,6 +584,7 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="cameraSalon:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="Rzj-y8-E6N"/>
+                                                            <segue destination="kbs-U2-cae" kind="show" id="rYb-Gm-GPV"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -632,6 +638,7 @@
                                                         </state>
                                                         <connections>
                                                             <action selector="cameraDoor:" destination="8mM-Te-1Xj" eventType="touchUpInside" id="bWo-ku-btz"/>
+                                                            <segue destination="kbs-U2-cae" kind="show" id="OAh-dR-f9T"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -659,7 +666,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="0LX-4G-32m" secondAttribute="trailing" constant="8" id="0WR-QH-zJg"/>
                                             <constraint firstItem="hgV-tR-k1g" firstAttribute="leading" secondItem="7Bb-nV-Djh" secondAttribute="leading" constant="8" id="20E-jC-BLF"/>
@@ -767,7 +774,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9sS-Lp-BfS"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Home" image="home" id="cN2-mu-KTy"/>
+                    <navigationItem key="navigationItem" id="iEi-Gv-ge3"/>
                     <size key="freeformSize" width="375" height="1500"/>
                     <connections>
                         <outlet property="cameraDoor" destination="bJO-lM-BDY" id="ddq-M8-nV2"/>
@@ -803,7 +810,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="98B-JJ-AIn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2100" y="783.50824587706154"/>
+            <point key="canvasLocation" x="3039.1999999999998" y="783.50824587706154"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="uaT-FW-R2y">
+            <objects>
+                <viewController id="kbs-U2-cae" customClass="webViewController" customModule="GP2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sbl-2D-3Jm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2Mn-di-6x1">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2Mn-di-6x1" firstAttribute="top" secondItem="sbl-2D-3Jm" secondAttribute="top" id="g82-3S-sAK"/>
+                            <constraint firstItem="2Mn-di-6x1" firstAttribute="leading" secondItem="Ki9-eh-axj" secondAttribute="leading" id="jGo-j0-vLJ"/>
+                            <constraint firstItem="2Mn-di-6x1" firstAttribute="bottom" secondItem="Ki9-eh-axj" secondAttribute="bottom" id="nWX-D6-6Bs"/>
+                            <constraint firstItem="2Mn-di-6x1" firstAttribute="trailing" secondItem="Ki9-eh-axj" secondAttribute="trailing" id="rAG-kC-hqp"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ki9-eh-axj"/>
+                    </view>
+                    <connections>
+                        <outlet property="webView" destination="2Mn-di-6x1" id="YH0-5w-1cY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kw7-1h-zag" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4013.5999999999999" y="515.8920539730135"/>
         </scene>
         <!--Siri-->
         <scene sceneID="mQc-Bd-6kd">
@@ -812,7 +853,7 @@
                     <view key="view" contentMode="scaleToFill" id="BsK-u7-Ypo">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="laP-HJ-WXs"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Siri" image="microphone" id="tZa-RF-0Wo"/>
@@ -861,6 +902,36 @@
                                 <color key="textColor" red="0.0" green="0.82409731220000004" blue="0.60235554229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" distribution="fillEqually" spacing="35" translatesAutoresizingMaskIntoConstraints="NO" id="FYq-1e-uB2">
+                                <rect key="frame" x="61" y="503" width="253" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uZZ-N2-0n6">
+                                        <rect key="frame" x="0.0" y="0.0" width="61" height="30"/>
+                                        <state key="normal" title="2 Rooms"/>
+                                        <connections>
+                                            <action selector="twoRooms:" destination="y0w-oL-RHJ" eventType="touchUpInside" id="WgU-X3-DN1"/>
+                                            <segue destination="8mM-Te-1Xj" kind="show" identifier="twoRoomsSegue" id="a7w-AP-y25"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Zd-o6-gmV">
+                                        <rect key="frame" x="96" y="0.0" width="61" height="30"/>
+                                        <state key="normal" title="3 Rooms"/>
+                                        <connections>
+                                            <action selector="threeRooms:" destination="y0w-oL-RHJ" eventType="touchUpInside" id="C7f-oN-gMR"/>
+                                            <segue destination="8mM-Te-1Xj" kind="show" identifier="threeRoomsSegue" id="a70-7n-PoG"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mTV-vD-CX4">
+                                        <rect key="frame" x="192" y="0.0" width="61" height="30"/>
+                                        <state key="normal" title="4 Rooms"/>
+                                        <connections>
+                                            <action selector="fourRooms:" destination="y0w-oL-RHJ" eventType="touchUpInside" id="QeG-ss-g77"/>
+                                            <segue destination="8mM-Te-1Xj" kind="show" identifier="fourRoomsSegue" id="wqU-H9-Lv4"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="wag-XJ-WD5"/>
@@ -873,7 +944,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ave-y8-QTF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1702" y="1884"/>
+            <point key="canvasLocation" x="1701.5999999999999" y="1883.2083958020992"/>
         </scene>
         <!--One Table View Controller-->
         <scene sceneID="ryI-VN-Tsz">
@@ -969,13 +1040,32 @@
                     </tabBar>
                     <connections>
                         <segue destination="9By-T6-CpC" kind="relationship" relationship="viewControllers" id="cbk-g9-tMX"/>
-                        <segue destination="8mM-Te-1Xj" kind="relationship" relationship="viewControllers" id="sBV-bN-Jfi"/>
+                        <segue destination="RIs-xA-fEi" kind="relationship" relationship="viewControllers" id="sBV-bN-Jfi"/>
                         <segue destination="y0w-oL-RHJ" kind="relationship" relationship="viewControllers" id="s3A-P8-C6J"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pEH-Rv-aCe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1001" y="174"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="Z1C-HS-0o0">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RIs-xA-fEi" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Home" image="home" id="cN2-mu-KTy"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="jni-a9-50d">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="8mM-Te-1Xj" kind="relationship" relationship="rootViewController" id="B67-WY-DMa"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CMx-tR-ePQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2100" y="783.05847076461771"/>
         </scene>
     </scenes>
     <resources>
@@ -988,8 +1078,10 @@
         <image name="microphone" width="30" height="30"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="6As-HC-Hqs"/>
+        <segue reference="u6s-1R-JRE"/>
         <segue reference="BE8-8t-7HV"/>
-        <segue reference="PeC-BN-hz3"/>
+        <segue reference="HL7-XU-HUM"/>
+        <segue reference="wqU-H9-Lv4"/>
+        <segue reference="8W7-A4-5f9"/>
     </inferredMetricsTieBreakers>
 </document>

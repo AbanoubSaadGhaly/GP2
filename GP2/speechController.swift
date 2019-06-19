@@ -23,6 +23,25 @@ class speechController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+   
+    
+    
+    @IBAction func twoRooms(_ sender: Any) {
+     //   embeddedController
+    //    embeddedController.twoRoom(setter: 00)
+    }
+    
+    
+    @IBAction func threeRooms(_ sender: UIButton) {
+        //embeddedController.threeRoom()
+    }
+    
+    
+    @IBAction func fourRooms(_ sender: UIButton) {
+       //embeddedController.fourRoom()
+    }
+    
+    
     @IBAction func doChange(_ sender: Any) {
         if LocalizationSystem.sharedInstance.getLanguage() == "ar"{
             LocalizationSystem.sharedInstance.setLanguage(languageCode: "en")

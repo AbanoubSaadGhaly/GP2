@@ -22,6 +22,7 @@
 		B20EA1F522B8F54700EAE654 /* WeatherDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20EA1F422B8F54700EAE654 /* WeatherDataModel.swift */; };
 		B20EA1F722B8F5BE00EAE654 /* contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20EA1F622B8F5BE00EAE654 /* contacts.swift */; };
 		B20EA1F922B9A87200EAE654 /* magazine-unlock-01-2.3.920-_142acd9dfcf947a5a3d99fea2ce9e349.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B20EA1F822B9A87000EAE654 /* magazine-unlock-01-2.3.920-_142acd9dfcf947a5a3d99fea2ce9e349.jpg */; };
+		B20EA1FB22B9ACD800EAE654 /* webViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20EA1FA22B9ACD800EAE654 /* webViewController.swift */; };
 		B20F328C22ACACF100269194 /* speechViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B20F328B22ACACF100269194 /* speechViewController.swift */; };
 		B218D98322A6B59200A6014C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218D98222A6B59200A6014C /* AppDelegate.swift */; };
 		B218D98522A6B59200A6014C /* SignInController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B218D98422A6B59200A6014C /* SignInController.swift */; };
@@ -80,6 +81,7 @@
 		B20EA1F422B8F54700EAE654 /* WeatherDataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherDataModel.swift; sourceTree = "<group>"; };
 		B20EA1F622B8F5BE00EAE654 /* contacts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = contacts.swift; sourceTree = "<group>"; };
 		B20EA1F822B9A87000EAE654 /* magazine-unlock-01-2.3.920-_142acd9dfcf947a5a3d99fea2ce9e349.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "magazine-unlock-01-2.3.920-_142acd9dfcf947a5a3d99fea2ce9e349.jpg"; sourceTree = "<group>"; };
+		B20EA1FA22B9ACD800EAE654 /* webViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = webViewController.swift; sourceTree = "<group>"; };
 		B20F328B22ACACF100269194 /* speechViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = speechViewController.swift; sourceTree = "<group>"; };
 		B218D97F22A6B59200A6014C /* GP2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GP2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B218D98222A6B59200A6014C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -205,6 +207,7 @@
 				B20EA1E922B712EB00EAE654 /* IMG_20190617_015923.jpg */,
 				B20EA1EB22B712F700EAE654 /* IMG_20190617_020024.jpg */,
 				B20EA1E522B712A800EAE654 /* IMG_20190617_015953.jpg */,
+				B20EA1FA22B9ACD800EAE654 /* webViewController.swift */,
 			);
 			path = GP2;
 			sourceTree = "<group>";
@@ -516,6 +519,7 @@
 				B218D98522A6B59200A6014C /* SignInController.swift in Sources */,
 				B20EA1F122B8EC5200EAE654 /* oneCell.swift in Sources */,
 				B218D9BC22A6EDB100A6014C /* embeddedController.swift in Sources */,
+				B20EA1FB22B9ACD800EAE654 /* webViewController.swift in Sources */,
 				B20F328C22ACACF100269194 /* speechViewController.swift in Sources */,
 				B218D98322A6B59200A6014C /* AppDelegate.swift in Sources */,
 				B218D9BA22A6EC9300A6014C /* speechController.swift in Sources */,
