@@ -17,6 +17,7 @@ pod 'Firebase/Core'
         pod 'GoogleAPIClientForREST/Sheets', '~> 1.2.1'
 pod 'SwiftyJSON'
 pod 'Alamofire'
+Pod 'IBMWatsonSpeechToTextV1'
   
 target 'GP2Tests' do
     inherit! :search_paths

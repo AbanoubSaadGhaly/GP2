@@ -8,6 +8,10 @@
 
 import UIKit
 import Firebase
+
+
+
+
 class speechController: UIViewController {
 
 
@@ -27,18 +31,17 @@ class speechController: UIViewController {
     
     
     @IBAction func twoRooms(_ sender: Any) {
-     //   embeddedController
-    //    embeddedController.twoRoom(setter: 00)
+        roomsMode (state: "0")
     }
     
     
     @IBAction func threeRooms(_ sender: UIButton) {
-        //embeddedController.threeRoom()
+       roomsMode (state: "1")
     }
     
     
     @IBAction func fourRooms(_ sender: UIButton) {
-       //embeddedController.fourRoom()
+      roomsMode (state: "2")
     }
     
     
@@ -75,5 +78,14 @@ class speechController: UIViewController {
             print(error)
         }
     }
+    
+    
+    func roomsMode (state : String)
+    {
+        let ref = Database.database().reference()
+        let post : [String : AnyObject] = ["Fan" :state as AnyObject]
+        ref.child("roomsMode").child("noRooms").setValue(post)
+    }
+    
     
 }
