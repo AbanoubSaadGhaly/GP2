@@ -604,13 +604,13 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate, UINaviga
         let x:String = myText.text!
         let y =   "اضف مذكرات "
         print (x)
-        let difference = zip(x , y).filter{ $0 != $1 }
-        print(difference)
-        let d = difference
+   //     let difference = zip(x , y).filter{ $0 != $1 }
+    //    print(difference)
+    //    let d = difference
         
         
-        let lengh:Float = Float(d.count)
-        print(lengh)
+     //   let lengh:Float = Float(d.count)
+      //  print(lengh)
         
         // first word
         var z1 = " "
@@ -633,6 +633,7 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate, UINaviga
                 sum2 = sum2 + 1
             }else {break}
         }
+  
         
         print (z2)
 
@@ -693,77 +694,229 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate, UINaviga
         let err2:Float = Float( ( ( dif2 ) / (11)  * 100 ) )
         let err:Float = err1 + err2
         print (err)
-        if (err <= 10)
-        { myOutText.text = "اضف مذكرات "
+        let f = [z1]
+        let g = [z3]
+        print (f)
+        print (g)
+        if (err <= 20  )
+        {
+            myOutText.text = "اضف مذكرات "
         }
-        if (err > 10)
-        { myOutText.text = " "
+     
+        else if (err > 20)
+        {  removeReminder()
         }
-    }
+    
   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-  /*  func removeReminder(){
+    }
+    func removeReminder(){
         let x:String = myText.text!
         let y =  "احذف مذكرات "
-     
-        let difference1 = zip(x , y).filter{ $0 != $1 }
-        print(difference1)
-        let d = difference1
+        
+        print (x)
+        //     let difference = zip(x , y).filter{ $0 != $1 }
+        //    print(difference)
+        //    let d = difference
         
         
-        var z = [" "]
+        //   let lengh:Float = Float(d.count)
+        //  print(lengh)
+        
+        
+        // first word
+        var z1 = " "
+        var sum: Int = 0
         for chr in x {
-            z = z + ["\(chr)"]
-        }
-        print (z)
-        let lengh:Float = Float(d.count)
-        print(lengh)
-        let ln:Float = Float(y.count)
-        print (ln)
-        let err:Float = Float((lengh/ln) * 100)
-        print (err)
-        if (err <= 20){
-        myOutText.text = "احذف مذكرات"
-            
-    }
-    }
-    func LoadReminder(){
-        
-        let x:String = myText.text!
-        let y = "تحميل المذكرات"
-        var z = [" "]
-        for chr in x {
-            if (chr != nil){
-            z = z + ["\(chr)"]
+            if (chr != " "){
+                z1 = z1 + "\(chr)"
+                sum = sum + 1
             }else {break}
         }
-         myOutText.text = "تحميل المذكرات"
+        print (z1)
+        
+        // 1st word main command
+        var z2 = " "
+        var sum2: Int = 0
+        
+        for i in y {
+            if (i != " "){
+                z2 = z2 + "\(i)"
+                sum2 = sum2 + 1
+            }else {break}
+        }
+        
+        
+        print (z2)
+        
+        // second word
+        var end1:String  = " "
+        if let c = x.firstIndex(of: " "){
+            end1 = "\(x[c...])"
+        }
+        var z3 = " "
+        var sum3 : Int = 0
+        
+        for i in end1 {
+            z3 = z3 + "\(i)"
+            sum3 = sum3 + 1
+        }
+        print(z3)
+    
+        // 2nd word main command
+        var end2:String  = " "
+        if let c = y.firstIndex(of: " "){
+            end2 = "\(y[c...])"
+            
+            
+        }
+        var z4 = " "
+        var sum4 : Int = 0
+        
+        for i in end2 {
+            z4 = z4 + "\(i)"
+            sum4 = sum4 + 1
+        }
+        print(z4)
+        
+        
+        
+        
+        let difference1 = zip(z1 , z2).filter{ $0 != $1 }
+        print(difference1.count)
+        let dif1:Float = Float(difference1.count)
+        let difference2 = zip(z3 , z4).filter{ $0 != $1 }
+        print(difference2.count)
+        let dif2:Float =  Float( difference2.count)
+        
+        
+        
+        
+        let ln:Float = Float(y.count)
+        print (ln)
+        let err1:Float = Float( ( ( dif1 ) / (ln)  * 100 ) )
+        print (err1)
+        let err2:Float = Float( ( ( dif2 ) / (ln)  * 100 ) )
+        let err:Float = err1 + err2
+        print (err)
+        if (err <= 20)
+        { myOutText.text = "احذف مذكرات "
+        }
+        else if (err > 20)
+        { LoadReminder()
+        }
+    }
+    
+    
+
+   func LoadReminder(){
+        
+    let x:String = myText.text!
+    let y =   "تحميل مذكرات "
+    
+    print (x)
+    //     let difference = zip(x , y).filter{ $0 != $1 }
+    //    print(difference)
+    //    let d = difference
+    
+    
+    //   let lengh:Float = Float(d.count)
+    //  print(lengh)
+    
+    
+    // first word
+    var z1 = " "
+    var sum: Int = 0
+    for chr in x {
+        if (chr != " "){
+            z1 = z1 + "\(chr)"
+            sum = sum + 1
+        }else {break}
+    }
+    print (z1)
+    
+    // 1st word main command
+    var z2 = " "
+    var sum2: Int = 0
+    
+    for i in y {
+        if (i != " "){
+            z2 = z2 + "\(i)"
+            sum2 = sum2 + 1
+        }else {break}
+    }
+    
+    
+    print (z2)
+    
+    // second word
+    var end1:String  = " "
+    if let c = x.firstIndex(of: " "){
+        end1 = "\(x[c...])"
+    }
+    var z3 = " "
+    var sum3 : Int = 0
+    
+    for i in end1 {
+        z3 = z3 + "\(i)"
+        sum3 = sum3 + 1
+    }
+    print(z3)
+    
+    
+    
+    
+    
+    
+    
+    
+    // 2nd word main command
+    var end2:String  = " "
+    if let c = y.firstIndex(of: " "){
+        end2 = "\(y[c...])"
+        
+        
+    }
+    var z4 = " "
+    var sum4 : Int = 0
+    
+    for i in end2 {
+        z4 = z4 + "\(i)"
+        sum4 = sum4 + 1
+    }
+    print(z4)
+    
+    
+    
+    
+    let difference1 = zip(z1 , z2).filter{ $0 != $1 }
+    print(difference1.count)
+    let dif1:Float = Float(difference1.count)
+    let difference2 = zip(z3 , z4).filter{ $0 != $1 }
+    print(difference2.count)
+    let dif2:Float =  Float( difference2.count)
+    
+    
+    
+    
+    let ln:Float = Float(y.count)
+    print (ln)
+    let err1:Float = Float( ( ( dif1 ) / (ln)  * 100 ) )
+    print (err1)
+    let err2:Float = Float( ( ( dif2 ) / (ln)  * 100 ) )
+    let err:Float = err1 + err2
+    print (err)
+    if (err <= 20)
+    { myOutText.text =  "تحميل مذكرات "
+        loadReminder()
+    }
+   else  if (err > 20)
+    { myOutText.text = myText.text
+    }
     }
 
+}
     
-    
-    
+  /*
     func addNotes(){
         myOutText.text  = "اضف مفكرة"
     }
@@ -821,4 +974,4 @@ class ViewController: UIViewController,UIImagePickerControllerDelegate, UINaviga
         myOutText.text = "ابحث في جوجل عن"
     }*/
 
-}
+
